@@ -8,7 +8,7 @@ ul,
 li {
   margin: 0px;
   padding: 0px;
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 a {
@@ -113,7 +113,7 @@ textarea:focus {
   content: "";
   width: 60px;
   height: 3px;
-  background: #5C8EF2;
+  background: #5c8ef2;
   margin-bottom: 5px;
   margin-right: 10px;
   margin-left: 30px;
@@ -153,28 +153,28 @@ textarea:focus {
 
 .btn {
   text-transform: uppercase;
-  color: #F2F2F2;
+  color: #f2f2f2;
   display: block;
   margin: 0 auto;
   background: none;
-  border: 3px solid #5C8EF2;
+  border: 3px solid #5c8ef2;
   padding: 10px 20px;
   margin-bottom: 30px;
   cursor: pointer;
 }
 
 .btn:hover {
-  background: #5C8EF2;
+  background: #5c8ef2;
   transition: all ease-in-out 0.3s;
 }
 
 .btn-call {
-  border-color: #2F4073;
+  border-color: #2f4073;
 }
 
 .btn-call:hover {
-  color: #F2F2F2;
-  background: #2F4073;
+  color: #f2f2f2;
+  background: #2f4073;
 }
 
 .subtitulo {
@@ -208,7 +208,7 @@ textarea:focus {
   display: inline-block;
 }
 .menu .header-menu li a {
-  color: #F2F2F2;
+  color: #f2f2f2;
   text-transform: uppercase;
   padding: 10px;
 }
@@ -231,7 +231,7 @@ textarea:focus {
 }
 
 .servicos {
-  background: #F2F2F2;
+  background: #f2f2f2;
   padding-bottom: 60px;
 }
 .servicos ul {
@@ -239,7 +239,7 @@ textarea:focus {
 }
 .servicos .servico-item h2 {
   text-transform: uppercase;
-  color: #5C8EF2;
+  color: #5c8ef2;
   padding: 30px 0;
 }
 .servicos .servico-item p {
@@ -250,7 +250,7 @@ textarea:focus {
   color: #262626;
 }
 .servicos > .btn:hover {
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 .sobre {
@@ -266,38 +266,45 @@ textarea:focus {
   display: flex;
 }
 .clientes-lista .cliente-item {
-  background: linear-gradient(180deg, #E3E3E3, #F2F2F2);
+  background: linear-gradient(180deg, #e3e3e3, #f2f2f2);
 }
 .clientes-lista .cliente-item .detalhes span {
   display: block;
-  color: #5C8EF2;
+  color: #5c8ef2;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 .clientes-lista .cliente-item .btn:hover {
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 .clientes .btn {
   color: #262626;
 }
 .clientes > .btn:hover {
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 .typewriter {
   padding: 60px 0;
   background: #262626;
 }
+.typewriter h1::after {
+  content: "|";
+  margin-left: 2px;
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
 .contato {
-  background: #F2F2F2;
+  background: #f2f2f2;
   padding-bottom: 60px;
 }
 .contato div {
   display: flex;
 }
 .contato p {
-  color: #2F4073;
+  color: #2f4073;
 }
 .contato .contato-form {
   display: flex;
@@ -307,7 +314,7 @@ textarea:focus {
 }
 .contato .contato-form label {
   text-transform: uppercase;
-  color: #2F4073;
+  color: #2f4073;
   margin-bottom: 5px;
   width: 100%;
 }
@@ -320,14 +327,14 @@ textarea:focus {
   margin-bottom: 30px;
 }
 .contato .contato-form .btn {
-  border: 2px solid #2F4073;
+  border: 2px solid #2f4073;
   color: #262626;
   padding: 10px 20px;
   margin: 0;
 }
 .contato .contato-form .btn:hover {
-  background: #2F4073;
-  color: #F2F2F2;
+  background: #2f4073;
+  color: #f2f2f2;
 }
 
 .footer {
@@ -342,7 +349,7 @@ textarea:focus {
 }
 .footer .footer-titulo {
   text-transform: uppercase;
-  color: #4B75F2;
+  color: #4b75f2;
   margin-top: 60px;
   margin-bottom: 30px;
 }
@@ -353,8 +360,17 @@ textarea:focus {
 }
 .footer .redes li a,
 .footer .contato-footer li a {
-  color: #F2F2F2;
+  color: #f2f2f2;
   padding: 10px 0;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
