@@ -47,6 +47,10 @@ textarea:focus {
   outline: none;
 }
 
+body {
+  background: $branco;
+}
+
 *,
 *:before,
 *:after {
@@ -85,6 +89,12 @@ textarea:focus {
   font-weight: normal;
 }
 
+
+%regular18 {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
 %bold48 {
   font-size: 3.052rem;
   font-weight: bold;
@@ -115,6 +125,11 @@ textarea:focus {
   font-weight: bold;
 }
 
+%bold10 {
+  font-size: 0.64rem;
+  font-weight: bold;
+}
+
 %bold13 {
   font-size: 0.8rem;
   font-weight: bold;
@@ -139,6 +154,7 @@ textarea:focus {
 }
 
 %grid {
+  min-height: 1px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -146,6 +162,11 @@ textarea:focus {
 .grid-12 {
   @extend %grid;
   width: calc(100% - 20px);
+}
+
+.grid-11 {
+  @extend %grid;
+  width: calc(91.66% - 20px);
 }
 
 .grid-10 {
@@ -158,6 +179,11 @@ textarea:focus {
   width: calc(58.33% - 20px);
 }
 
+.grid-6 {
+  @extend %grid;
+  width: calc(50% - 20px);
+}
+
 .grid-5 {
   @extend %grid;
   width: calc(41.66% - 20px);
@@ -166,6 +192,11 @@ textarea:focus {
 .grid-4 {
   @extend %grid;
   width: calc(33.33% - 20px);
+}
+
+.grid-1 {
+  @extend %grid;
+  width: calc(8.33% - 20px);
 }
 
 .btn {
@@ -183,7 +214,12 @@ textarea:focus {
 
 .btn:hover {
   background: $azulClaro;
-  transition: all ease-in-out 0.3s;
+  -webkit-transition: all .35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all .35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
+  transition-duration: 0.35s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
 }
 
 .btn-call {
@@ -211,6 +247,21 @@ textarea:focus {
   padding-top: 60px;
   padding-bottom: 50px;
   color: $preto;
+}
+
+.titulo-interno {
+  @extend %bold39;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  color: $preto;
+}
+
+.titulo-interno::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: $preto;
 }
 
 // Inicio dos estilos gerais
@@ -286,11 +337,11 @@ textarea:focus {
     }
   }
 
-  > .btn {
+  >.btn {
     color: $preto;
   }
 
-  > .btn:hover {
+  >.btn:hover {
     color: $branco;
   }
 }
@@ -337,7 +388,7 @@ textarea:focus {
     color: $preto;
   }
 
-  > .btn:hover {
+  >.btn:hover {
     color: $branco;
   }
 }
@@ -445,11 +496,175 @@ textarea:focus {
 }
 
 @keyframes blink {
+
   0%,
   100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
+  }
+}
+
+
+// Pagina interna sobre
+.sobre-interna {
+  background: $branco;
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  div {
+    margin-left: 20px;
+
+    p {
+      max-width: 580px;
+      color: $preto;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.beneficios {
+  background: $branco;
+  padding: 60px 0;
+
+  .lista-beneficios {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .lista-beneficios::after {
+    content: "";
+    position: absolute;
+    left: 600px;
+    display: block;
+    width: 2px;
+    top: -1px;
+    height: 954px;
+    background: $azulClaro;
+  }
+
+  .beneficio {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 6fr;
+    grid-template-areas:
+      ". area1 . area2";
+    margin-bottom: 40px;
+
+    p {
+      grid-area: area2;
+      @extend %regular18;
+      color: $preto;
+    }
+
+    div {
+      grid-area: area1;
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 280px;
+
+      img {
+        height: 70px;
+        width: 70px;
+        margin-bottom: 5px;
+      }
+
+      span {
+        @extend %light16;
+        color: $preto;
+      }
+    }
+  }
+
+  .beneficio:nth-child(odd) p {
+    grid-area: area1;
+  }
+
+  .beneficio:nth-child(odd) div {
+    grid-area: area2;
+  }
+}
+
+.contato-interna {
+  background: $preto;
+  padding-bottom: 60px;
+
+  h1 {
+    @extend %bold39;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: $branco;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+
+  p {
+    @extend %light16;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    border-color: $branco;
+  }
+
+  .btn:hover {
+    background: $branco;
+    color: $preto;
+  }
+}
+
+.estudos {
+  padding: 60px 0;
+
+  ul {
+    display: flex;
+  }
+
+  .estudo-item {
+    div {
+      background: $bg;
+      height: 100px;
+
+      span {
+        display: block;
+        @extend %bold10;
+        text-transform: uppercase;
+        color: $azulClaro;
+        padding: 10px 0;
+      }
+
+      span::before {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        margin-right: 10px;
+        margin-left: 15px;
+        background: $azulClaro;
+        margin-bottom: 2px;
+      }
+
+      p {
+        @extend %bold16;
+        color: $preto;
+        margin-left: 15px;
+      }
+    }
   }
 }
