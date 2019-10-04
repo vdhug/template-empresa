@@ -64,6 +64,11 @@ body {
   font-weight: lighter;
 }
 
+%light18 {
+  font-size: 1.125rem;
+  font-weight: lighter;
+}
+
 %light16 {
   font-size: 1rem;
   font-weight: lighter;
@@ -147,7 +152,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0px;
   position: relative;
@@ -507,6 +512,15 @@ body {
   }
 }
 
+@keyframes blink {
+
+  0%,
+  100% {}
+
+  50% {
+    opacity: 0;
+  }
+}
 
 // Pagina interna sobre
 .sobre-interna {
@@ -667,4 +681,171 @@ body {
       }
     }
   }
+}
+
+.servicos-interna {
+  .titulo {
+    text-align: left;
+    text-transform: initial;
+    padding: 60px 0 0 0;
+  }
+
+  .titulo::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: $preto;
+    margin-top: 10px;
+  }
+
+  p {
+    @extend %light16;
+    color: $preto;
+    margin-top: 30px;
+  }
+
+
+  .lista-servicos {
+    margin: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .servico {
+      background: $azulEscuro;
+      padding: 25px;
+      border-bottom: 3px solid $azulClaro;
+      margin-bottom: 20px;
+
+      img {
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        @extend %bold31;
+      }
+
+      p {
+        @extend %light18;
+        line-height: 1.4;
+        height: 200px;
+        margin-top: 20px;
+        color: $branco;
+      }
+
+      a {
+        @extend %light18;
+        color: $branco;
+        position: relative;
+        padding: 10px;
+      }
+
+      a::after {
+        content: "→";
+        position: absolute;
+        padding-left: 15px;
+        animation: seta .5s ease-in 0s infinite alternate;
+      }
+    }
+  }
+}
+
+.servicos-contato {
+  background: $preto;
+
+  >div {
+    display: flex;
+
+    h2 {
+      @extend %bold31;
+      margin-top: 60px;
+      line-height: 1.4;
+    }
+
+    ul li {
+      p {
+        @extend %regular25;
+        line-height: 1;
+        margin-bottom: 5px;
+      }
+
+      span {
+        display: block;
+        @extend %bold31;
+        margin-bottom: 60px;
+      }
+    }
+
+    form {
+      margin-top: 30px;
+
+      input[type='text'],
+      input[type='email'] {
+        width: calc(50% - 10px);
+        border: 3px solid $branco;
+        background: transparent;
+        padding: 10px;
+        @extend %regular18;
+        color: $branco;
+
+      }
+
+      input[type='text'] {
+        margin-right: 16px;
+      }
+
+      textarea {
+        display: block;
+        width: 100%;
+        height: 200px;
+        margin-top: 20px;
+        border: 3px solid $branco;
+        background: transparent;
+        padding: 10px;
+        @extend %regular18;
+        color: $branco;
+      }
+
+      .btn {
+        margin-top: 20px;
+        border-color: $branco;
+        float: right;
+      }
+
+      .btn:hover {
+        background: $branco;
+        color: $preto;
+      }
+    }
+  }
+
+  .titulo {
+    text-align: left;
+    color: $branco;
+  }
+
+  .titulo::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: $branco;
+    margin-top: 10px;
+  }
+}
+
+.typewriter-servicos {
+  background: $branco;
+
+  h1 {
+    color: $preto;
+  }
+}
+
+@keyframes seta {
+  from {
+    transform: translate3d(3px, 0, 0);
+  }
+
+  to {}
 }
