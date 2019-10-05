@@ -1,0 +1,117 @@
+.beneficios .beneficio div span {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.estudos .estudo-item div p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sobre-interna {
+  margin: 60px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sobre-interna .sobre-descricao {
+  margin-left: 20px;
+  max-width: 580px;
+}
+.sobre-interna .sobre-descricao .texto-preto + .texto-preto {
+  margin-top: 20px;
+}
+
+.beneficios {
+  padding-bottom: 60px;
+}
+.beneficios .lista-beneficios {
+  position: relative;
+}
+.beneficios .lista-beneficios::after {
+  content: "";
+  position: absolute;
+  left: 600px;
+  display: block;
+  width: 2px;
+  top: -1px;
+  height: 1090px;
+  background: #5c8ef2;
+}
+.beneficios .beneficio {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 6fr;
+  grid-template-areas: ". area1 . area2";
+  margin-bottom: 40px;
+}
+.beneficios .beneficio p {
+  grid-area: area2;
+}
+.beneficios .beneficio div {
+  grid-area: area1;
+  justify-self: right;
+  margin-right: 80px;
+  align-self: center;
+  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 280px;
+}
+.beneficios .beneficio div img {
+  height: 70px;
+  width: 70px;
+  margin-bottom: 5px;
+}
+.beneficios .beneficio div span {
+  display: block;
+  margin-top: 5px;
+  color: #262626;
+}
+.beneficios .beneficio:nth-child(odd) p {
+  grid-area: area1;
+}
+.beneficios .beneficio:nth-child(odd) div {
+  grid-area: area2;
+  justify-self: left;
+  margin-left: 80px;
+}
+
+.quebra-contato {
+  background: #262626;
+  padding: 60px 0;
+}
+.quebra-contato .btn-branco {
+  margin: 10px auto 0;
+}
+
+.estudos {
+  padding: 60px 0;
+}
+.estudos .estudo-item {
+  background: #e3e3e3;
+}
+.estudos .estudo-item div {
+  height: 150px;
+  flex-direction: column;
+}
+.estudos .estudo-item div p {
+  color: #262626;
+  margin-left: 15px;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+.estudos .estudo-item:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.estudos .estudo-item:hover a,
+.estudos .estudo-item:hover span {
+  color: #2f4073;
+}
+.estudos .estudo-item:hover a {
+  font-weight: bold;
+}
+.estudos .estudo-item:hover span::before {
+  background: #2f4073;
+}
+
+/*# sourceMappingURL=sobre.css.map */

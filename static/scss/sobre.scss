@@ -1,0 +1,135 @@
+@import 'colors';
+@import 'tipografias';
+
+.sobre-interna {
+    margin: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .sobre-descricao {
+        margin-left: 20px;
+        max-width: 580px;
+
+
+        .texto-preto+.texto-preto {
+            margin-top: 20px;
+        }
+    }
+}
+
+
+.beneficios {
+    padding-bottom: 60px;
+
+    .lista-beneficios {
+        position: relative;
+    }
+
+    .lista-beneficios::after {
+        content: "";
+        position: absolute;
+        left: 600px;
+        display: block;
+        width: 2px;
+        top: -1px;
+        height: 1090px;
+        background: $azulClaro;
+    }
+
+    .beneficio {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr 6fr;
+        grid-template-areas:
+            ". area1 . area2";
+        margin-bottom: 40px;
+
+        p {
+            grid-area: area2;
+        }
+
+        div {
+            grid-area: area1;
+
+            justify-self: right;
+            margin-right: 80px;
+            align-self: center;
+            padding-bottom: 20px;
+            flex-direction: column;
+            align-items: center;
+            max-width: 280px;
+
+            img {
+                height: 70px;
+                width: 70px;
+                margin-bottom: 5px;
+            }
+
+            span {
+                @extend %light16;
+                display: block;
+                margin-top: 5px;
+                color: $preto;
+            }
+        }
+    }
+
+    .beneficio:nth-child(odd) p {
+        grid-area: area1;
+    }
+
+    .beneficio:nth-child(odd) div {
+        grid-area: area2;
+        justify-self: left;
+        margin-left: 80px;
+    }
+}
+
+.quebra-contato {
+    background: $preto;
+    padding: 60px 0;
+
+    .btn-branco {
+        margin: 10px auto 0;
+    }
+}
+
+.estudos {
+    padding: 60px 0;
+
+    .estudo-item {
+        background: $bg;
+
+        div {
+            height: 150px;
+            flex-direction: column;
+
+            p {
+                @extend %bold16;
+                color: $preto;
+                margin-left: 15px;
+                line-height: 1.4;
+                flex-grow: 1;
+            }
+        }
+
+
+    }
+
+    .estudo-item:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    .estudo-item:hover a,
+    .estudo-item:hover span {
+        color: $azulEscuro;
+    }
+
+    .estudo-item:hover a {
+        font-weight: bold;
+    }
+
+    .estudo-item:hover span::before {
+        background: $azulEscuro;
+    }
+}

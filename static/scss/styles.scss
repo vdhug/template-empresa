@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
 
-$preto: #262626;
-$branco: #f2f2f2;
-$azulEscuro: #2f4073;
-$azulMedio: #4b75f2;
-$azulClaro: #5c8ef2;
-$bg: #e3e3e3;
+// importando cores
+@import 'colors';
+@import 'tipografias';
+
+// Resetando estilos
 
 body,
 p,
@@ -14,838 +13,275 @@ h2,
 h3,
 ul,
 li {
-  margin: 0px;
-  padding: 0px;
-  color: $branco;
+    margin: 0px;
+    padding: 0px;
+    color: $branco;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 * {
-  box-sizing: border-box;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 textarea {
-  resize: none;
+    resize: none;
 }
 
 input:focus,
 textarea:focus {
-  outline: none;
+    outline: none;
 }
 
 body {
-  background: $branco;
+    background: $branco;
 }
 
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-%light31 {
-  font-size: 1.953rem;
-  font-weight: lighter;
-}
-
-%light18 {
-  font-size: 1.125rem;
-  font-weight: lighter;
-}
-
-%light16 {
-  font-size: 1rem;
-  font-weight: lighter;
-}
-
-%regular48 {
-  font-size: 3.052rem;
-  font-weight: normal;
-}
-
-%regular31 {
-  font-size: 1.953rem;
-  font-weight: normal;
-}
-
-%regular25 {
-  font-size: 1.563rem;
-  font-weight: normal;
-}
-
-%regular20 {
-  font-size: 1.25rem;
-  font-weight: normal;
+// Definindo classe flex
+.flex {
+    display: flex;
 }
 
 
-%regular18 {
-  font-size: 1.125rem;
-  font-weight: normal;
-}
-
-%bold48 {
-  font-size: 3.052rem;
-  font-weight: bold;
-}
-
-%bold39 {
-  font-size: 2.441rem;
-  font-weight: bold;
-}
-
-%bold31 {
-  font-size: 1.953rem;
-  font-weight: bold;
-}
-
-%bold25 {
-  font-size: 1.563rem;
-  font-weight: bold;
-}
-
-%bold20 {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-%bold16 {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-%bold10 {
-  font-size: 0.64rem;
-  font-weight: bold;
-}
-
-%bold13 {
-  font-size: 0.8rem;
-  font-weight: bold;
+// Estilos de titulos
+%titulo {
+    @extend %bold39;
+    text-transform: uppercase;
+    line-height: 1.4;
+    margin-bottom: 40px;
 }
 
 %decorador {
-  display: inline-block;
-  content: "";
-  width: 60px;
-  height: 3px;
-  background: $azulClaro;
-  margin-bottom: 5px;
-  margin-right: 10px;
-  margin-left: 30px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px;
-  position: relative;
-}
-
-%grid {
-  min-height: 1px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.grid-12 {
-  @extend %grid;
-  width: calc(100% - 20px);
-}
-
-.grid-11 {
-  @extend %grid;
-  width: calc(91.66% - 20px);
-}
-
-.grid-10 {
-  @extend %grid;
-  width: calc(83.33% - 20px);
-}
-
-.grid-7 {
-  @extend %grid;
-  width: calc(58.33% - 20px);
-}
-
-.grid-6 {
-  @extend %grid;
-  width: calc(50% - 20px);
-}
-
-.grid-5 {
-  @extend %grid;
-  width: calc(41.66% - 20px);
-}
-
-.grid-4 {
-  @extend %grid;
-  width: calc(33.33% - 20px);
-}
-
-.grid-1 {
-  @extend %grid;
-  width: calc(8.33% - 20px);
-}
-
-.btn {
-  @extend %bold20;
-  text-transform: uppercase;
-  color: $branco;
-  display: block;
-  margin: 0 auto;
-  background: none;
-  border: 3px solid $azulClaro;
-  padding: 10px 20px;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: $azulClaro;
-  -webkit-transition: all .35s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all .35s cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: all;
-  transition-duration: 0.35s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
-}
-
-.btn-call {
-  border-color: $azulEscuro;
-}
-
-.btn-call:hover {
-  color: $branco;
-  background: $azulEscuro;
-}
-
-.subtitulo {
-  @extend %bold13;
-  text-transform: uppercase;
-  text-align: center;
-  color: $preto;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.titulo {
-  @extend %bold39;
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 50px;
-  color: $preto;
-}
-
-.titulo-interno {
-  @extend %bold39;
-  text-transform: uppercase;
-  padding-bottom: 30px;
-  color: $preto;
-}
-
-.titulo-interno::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: $preto;
-}
-
-// Inicio dos estilos gerais
-.header {
-  background: $preto;
-  display: flex;
-}
-
-.menu {
-  display: flex;
-  padding: 25px 0;
-  align-items: center;
-  justify-content: space-between;
-
-  .header-menu li {
-    display: inline-block;
-
-    a {
-      @extend %regular20;
-      color: $branco;
-      text-transform: uppercase;
-      padding: 10px;
-    }
-  }
-}
-
-.intro {
-  padding: 80px 0;
-  background: url("../img/intro.jpg") no-repeat center center;
-
-  .quote {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-
-    p {
-      @extend %regular48;
-      text-align: center;
-    }
-
-    cite {
-      @extend %light31;
-      text-align: center;
-      margin-top: 10px;
-    }
-  }
-}
-
-.servicos {
-  background: $branco;
-  padding-bottom: 60px;
-
-  ul {
-    display: flex;
-  }
-
-  .servico-item {
-    h2 {
-      @extend %bold16;
-      text-transform: uppercase;
-      color: $azulClaro;
-      padding: 30px 0;
-    }
-
-    h2::before {
-      @extend %decorador;
-    }
-
-    p {
-      @extend %bold31;
-      margin-left: 30px;
-      padding-bottom: 50px;
-    }
-  }
-
-  >.btn {
-    color: $preto;
-  }
-
-  >.btn:hover {
-    color: $branco;
-  }
-}
-
-.sobre {
-  background: $preto;
-  padding: 60px 0;
-
-  h2 {
-    @extend %regular31;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-.clientes-lista {
-  display: flex;
-
-  .cliente-item {
-    background: linear-gradient(180deg, $bg, $branco);
-
-    .detalhes {
-      span {
-        @extend %bold16;
-        display: block;
-        color: $azulClaro;
-        margin-top: 10px;
-        margin-bottom: 30px;
-      }
-
-      span::before {
-        @extend %decorador;
-      }
-    }
-
-    .btn:hover {
-      color: $branco;
-    }
-  }
-}
-
-.clientes {
-  .btn {
-    color: $preto;
-  }
-
-  >.btn:hover {
-    color: $branco;
-  }
-}
-
-.typewriter {
-  padding: 60px 0;
-  background: $preto;
-
-  h1 {
-    @extend %bold48;
-  }
-
-  h1::after {
-    content: "|";
-    margin-left: 2px;
-    opacity: 1;
-    animation: blink 0.7s infinite;
-  }
-}
-
-.contato {
-  background: $branco;
-  padding-bottom: 60px;
-
-  div {
-    display: flex;
-  }
-
-  p {
-    @extend %bold25;
-    color: $azulEscuro;
-  }
-
-  .contato-form {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: flex-end;
-
-    label {
-      @extend %regular20;
-      text-transform: uppercase;
-      color: $azulEscuro;
-      margin-bottom: 5px;
-      width: 100%;
-    }
-
-    .input {
-      width: 100%;
-      @extend %regular20;
-      padding: 10px 10px;
-      border: none;
-      border-bottom: 2px solid $preto;
-      background: transparent;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      @extend %regular20;
-      border: 2px solid $azulEscuro;
-      color: $preto;
-      padding: 10px 20px;
-      margin: 0;
-    }
-
-    .btn:hover {
-      background: $azulEscuro;
-      color: $branco;
-    }
-  }
-}
-
-.footer {
-  background: $preto;
-
-  div {
-    display: flex;
-    align-items: center;
-  }
-
-  nav {
-    padding-bottom: 60px;
-  }
-
-  .footer-titulo {
-    @extend %bold16;
-    text-transform: uppercase;
-    color: $azulMedio;
-    margin-top: 60px;
-    margin-bottom: 30px;
-  }
-
-  .redes li,
-  .contato-footer li {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .redes li a,
-  .contato-footer li a {
-    @extend %light16;
-    color: $branco;
-    padding: 10px 0;
-  }
-}
-
-@keyframes blink {
-
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
-@keyframes blink {
-
-  0%,
-  100% {}
-
-  50% {
-    opacity: 0;
-  }
-}
-
-// Pagina interna sobre
-.sobre-interna {
-  background: $branco;
-  padding-top: 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  div {
-    margin-left: 20px;
-
-    p {
-      max-width: 580px;
-      color: $preto;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-  }
-}
-
-.beneficios {
-  background: $branco;
-  padding: 60px 0;
-
-  .lista-beneficios {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .lista-beneficios::after {
-    content: "";
-    position: absolute;
-    left: 600px;
-    display: block;
-    width: 2px;
-    top: -1px;
-    height: 954px;
-    background: $azulClaro;
-  }
-
-  .beneficio {
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr 6fr;
-    grid-template-areas:
-      ". area1 . area2";
-    margin-bottom: 40px;
-
-    p {
-      grid-area: area2;
-      @extend %regular18;
-      color: $preto;
-    }
-
-    div {
-      grid-area: area1;
-      margin-left: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 280px;
-
-      img {
-        height: 70px;
-        width: 70px;
-        margin-bottom: 5px;
-      }
-
-      span {
-        @extend %light16;
-        color: $preto;
-      }
-    }
-  }
-
-  .beneficio:nth-child(odd) p {
-    grid-area: area1;
-  }
-
-  .beneficio:nth-child(odd) div {
-    grid-area: area2;
-  }
-}
-
-.contato-interna {
-  background: $preto;
-  padding-bottom: 60px;
-
-  h1 {
-    @extend %bold39;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 60px;
-  }
-
-  h1::after {
     content: "";
     display: block;
     width: 60px;
     height: 3px;
-    background: $branco;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 60px;
-  }
+}
 
-  p {
-    @extend %light16;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .btn {
-    border-color: $branco;
-  }
-
-  .btn:hover {
-    background: $branco;
+.titulo-preto {
+    @extend %titulo;
     color: $preto;
-  }
 }
 
-.estudos {
-  padding: 60px 0;
-
-  ul {
-    display: flex;
-  }
-
-  .estudo-item {
-    div {
-      background: $bg;
-      height: 100px;
-
-      span {
-        display: block;
-        @extend %bold10;
-        text-transform: uppercase;
-        color: $azulClaro;
-        padding: 10px 0;
-      }
-
-      span::before {
-        content: "";
-        display: inline-block;
-        width: 30px;
-        height: 2px;
-        margin-right: 10px;
-        margin-left: 15px;
-        background: $azulClaro;
-        margin-bottom: 2px;
-      }
-
-      p {
-        @extend %bold16;
-        color: $preto;
-        margin-left: 15px;
-      }
-    }
-  }
-}
-
-.servicos-interna {
-  .titulo {
-    text-align: left;
-    text-transform: initial;
-    padding: 60px 0 0 0;
-  }
-
-  .titulo::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
+.titulo-preto::after {
+    @extend %decorador;
     background: $preto;
-    margin-top: 10px;
-  }
-
-  p {
-    @extend %light16;
-    color: $preto;
-    margin-top: 30px;
-  }
-
-
-  .lista-servicos {
-    margin: 60px 0;
-    display: flex;
-    flex-wrap: wrap;
-
-    .servico {
-      background: $azulEscuro;
-      padding: 25px;
-      border-bottom: 3px solid $azulClaro;
-      margin-bottom: 20px;
-
-      img {
-        margin-bottom: 20px;
-      }
-
-      h2 {
-        @extend %bold31;
-      }
-
-      p {
-        @extend %light18;
-        line-height: 1.4;
-        height: 200px;
-        margin-top: 20px;
-        color: $branco;
-      }
-
-      a {
-        @extend %light18;
-        color: $branco;
-        position: relative;
-        padding: 10px;
-      }
-
-      a::after {
-        content: "→";
-        position: absolute;
-        padding-left: 15px;
-        animation: seta .5s ease-in 0s infinite alternate;
-      }
-    }
-  }
 }
 
-.servicos-contato {
-  background: $preto;
-
-  >div {
-    display: flex;
-
-    h2 {
-      @extend %bold31;
-      margin-top: 60px;
-      line-height: 1.4;
-    }
-
-    ul li {
-      p {
-        @extend %regular25;
-        line-height: 1;
-        margin-bottom: 5px;
-      }
-
-      span {
-        display: block;
-        @extend %bold31;
-        margin-bottom: 60px;
-      }
-    }
-
-    form {
-      margin-top: 30px;
-
-      input[type='text'],
-      input[type='email'] {
-        width: calc(50% - 10px);
-        border: 3px solid $branco;
-        background: transparent;
-        padding: 10px;
-        @extend %regular18;
-        color: $branco;
-
-      }
-
-      input[type='text'] {
-        margin-right: 16px;
-      }
-
-      textarea {
-        display: block;
-        width: 100%;
-        height: 200px;
-        margin-top: 20px;
-        border: 3px solid $branco;
-        background: transparent;
-        padding: 10px;
-        @extend %regular18;
-        color: $branco;
-      }
-
-      .btn {
-        margin-top: 20px;
-        border-color: $branco;
-        float: right;
-      }
-
-      .btn:hover {
-        background: $branco;
-        color: $preto;
-      }
-    }
-  }
-
-  .titulo {
-    text-align: left;
+.titulo-branco {
+    @extend %titulo;
     color: $branco;
-  }
+}
 
-  .titulo::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
+.titulo-branco::after {
+    @extend %decorador;
     background: $branco;
+}
+
+.titulo-branco-centralizado {
+    @extend %titulo;
+    color: $branco;
+    text-align: center;
+}
+
+.titulo-branco-centralizado::after {
+    @extend %decorador;
+    background: $branco;
+    margin: 0 auto;
     margin-top: 10px;
-  }
 }
 
-.typewriter-servicos {
-  background: $branco;
+%texto {
+    @extend %regular18;
+    line-height: 1.4;
+}
 
-  h1 {
+.texto-preto {
+    @extend %texto;
     color: $preto;
-  }
 }
 
-@keyframes seta {
-  from {
-    transform: translate3d(3px, 0, 0);
-  }
+.texto-call {
+    @extend %light18;
+    text-align: center;
+}
 
-  to {}
+.label {
+    display: block;
+    @extend %bold10;
+    text-transform: uppercase;
+    color: $azulClaro;
+    padding: 10px 0;
+}
+
+.label::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    margin-right: 10px;
+    margin-left: 15px;
+    background: $azulClaro;
+    margin-bottom: 2px;
+}
+
+.card-call {
+    @extend %light18;
+    position: relative;
+    padding: 10px;
+    color: $azulClaro;
+}
+
+.card-call::after {
+    content: "→";
+    position: absolute;
+    padding-left: 15px;
+    animation: seta .5s ease-in 0s infinite alternate;
+}
+
+.card-call:hover {
+    @extend %btn-hover;
+    color: $azulEscuro;
+}
+
+// Estilos de botoes
+%btn {
+    @extend %bold20;
+    text-transform: uppercase;
+    display: block;
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+%btn-hover {
+    -webkit-transition: all .35s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all .35s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: all;
+    transition-duration: 0.35s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+}
+
+*:hover {
+    -webkit-transition: all .35s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all .35s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: all;
+    transition-duration: 0.35s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+}
+
+.btn-branco {
+    @extend %btn;
+    border: 3px solid $branco;
+    color: $branco;
+}
+
+.btn-branco:hover {
+    @extend %btn-hover;
+    background: $branco;
+    color: $preto;
+}
+
+// Estilo header
+
+.header {
+    background: $preto;
+    display: flex;
+}
+
+// Estilo geral de link dos menus
+.link-menu {
+    color: $branco;
+    padding: 10px;
+}
+
+.link-menu:hover {
+    color: $azulClaro;
+    -webkit-transition: all .35s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all .35s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: all;
+    transition-duration: 0.35s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+}
+
+.menu-superior {
+    display: flex;
+    padding: 25px 0;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-menu li {
+        display: inline-block;
+
+        a {
+            @extend %regular20;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// Estilo Footer
+.footer {
+    background: $preto;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        padding-bottom: 60px;
+    }
+
+    .footer-titulo {
+        @extend %bold16;
+        text-transform: uppercase;
+        color: $azulMedio;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+
+    .redes li,
+    .contato-footer li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .link-menu {
+        @extend %light16;
+    }
+}
+
+// Animações
+@keyframes seta {
+    from {
+        transform: translate3d(3px, 0, 0);
+    }
+
+    to {}
 }

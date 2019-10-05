@@ -1,5 +1,45 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+.card-call, .texto-call {
+  font-size: 1.125rem;
+  font-weight: lighter;
+}
+
+.footer .link-menu {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.menu-superior .header-menu li a {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.texto-preto {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
+.titulo-branco-centralizado, .titulo-branco, .titulo-preto {
+  font-size: 2.441rem;
+  font-weight: bold;
+}
+
+.btn-branco {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.footer .footer-titulo {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 0.64rem;
+  font-weight: bold;
+}
+
 body,
 p,
 h1,
@@ -52,158 +92,106 @@ body {
   box-sizing: border-box;
 }
 
-.intro .quote cite {
-  font-size: 1.953rem;
-  font-weight: lighter;
+.flex {
+  display: flex;
 }
 
-.servicos-interna .lista-servicos .servico a, .servicos-interna .lista-servicos .servico p {
-  font-size: 1.125rem;
-  font-weight: lighter;
+.titulo-branco-centralizado, .titulo-branco, .titulo-preto {
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-bottom: 40px;
 }
 
-.servicos-interna p, .contato-interna p, .beneficios .beneficio div span, .footer .redes li a,
-.footer .contato-footer li a {
-  font-size: 1rem;
-  font-weight: lighter;
-}
-
-.intro .quote p {
-  font-size: 3.052rem;
-  font-weight: normal;
-}
-
-.sobre h2 {
-  font-size: 1.953rem;
-  font-weight: normal;
-}
-
-.servicos-contato > div ul li p {
-  font-size: 1.563rem;
-  font-weight: normal;
-}
-
-.contato .contato-form .btn, .contato .contato-form .input, .contato .contato-form label, .menu .header-menu li a {
-  font-size: 1.25rem;
-  font-weight: normal;
-}
-
-.servicos-contato > div form textarea, .servicos-contato > div form input[type=text],
-.servicos-contato > div form input[type=email], .beneficios .beneficio p {
-  font-size: 1.125rem;
-  font-weight: normal;
-}
-
-.typewriter h1 {
-  font-size: 3.052rem;
-  font-weight: bold;
-}
-
-.contato-interna h1, .titulo-interno, .titulo {
-  font-size: 2.441rem;
-  font-weight: bold;
-}
-
-.servicos-contato > div ul li span, .servicos-contato > div h2, .servicos-interna .lista-servicos .servico h2, .servicos .servico-item p {
-  font-size: 1.953rem;
-  font-weight: bold;
-}
-
-.contato p {
-  font-size: 1.563rem;
-  font-weight: bold;
-}
-
-.btn {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.estudos .estudo-item div p, .footer .footer-titulo, .clientes-lista .cliente-item .detalhes span, .servicos .servico-item h2 {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.estudos .estudo-item div span {
-  font-size: 0.64rem;
-  font-weight: bold;
-}
-
-.subtitulo {
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.clientes-lista .cliente-item .detalhes span::before, .servicos .servico-item h2::before {
-  display: inline-block;
+.titulo-branco-centralizado::after, .titulo-branco::after, .titulo-preto::after {
   content: "";
+  display: block;
   width: 60px;
   height: 3px;
-  background: #5c8ef2;
-  margin-bottom: 5px;
-  margin-right: 10px;
-  margin-left: 30px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px;
-  position: relative;
+.titulo-preto {
+  color: #262626;
 }
 
-.grid-1, .grid-4, .grid-5, .grid-6, .grid-7, .grid-10, .grid-11, .grid-12 {
-  min-height: 1px;
-  margin-left: 10px;
-  margin-right: 10px;
+.titulo-preto::after {
+  background: #262626;
 }
 
-.grid-12 {
-  width: calc(100% - 20px);
-}
-
-.grid-11 {
-  width: calc(91.66% - 20px);
-}
-
-.grid-10 {
-  width: calc(83.33% - 20px);
-}
-
-.grid-7 {
-  width: calc(58.33% - 20px);
-}
-
-.grid-6 {
-  width: calc(50% - 20px);
-}
-
-.grid-5 {
-  width: calc(41.66% - 20px);
-}
-
-.grid-4 {
-  width: calc(33.33% - 20px);
-}
-
-.grid-1 {
-  width: calc(8.33% - 20px);
-}
-
-.btn {
-  text-transform: uppercase;
+.titulo-branco {
   color: #f2f2f2;
-  display: block;
+}
+
+.titulo-branco::after {
+  background: #f2f2f2;
+}
+
+.titulo-branco-centralizado {
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.titulo-branco-centralizado::after {
+  background: #f2f2f2;
   margin: 0 auto;
+  margin-top: 10px;
+}
+
+.texto-preto {
+  line-height: 1.4;
+}
+
+.texto-preto {
+  color: #262626;
+}
+
+.texto-call {
+  text-align: center;
+}
+
+.label {
+  display: block;
+  text-transform: uppercase;
+  color: #5c8ef2;
+  padding: 10px 0;
+}
+
+.label::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  margin-right: 10px;
+  margin-left: 15px;
+  background: #5c8ef2;
+  margin-bottom: 2px;
+}
+
+.card-call {
+  position: relative;
+  padding: 10px;
+  color: #5c8ef2;
+}
+
+.card-call::after {
+  content: "→";
+  position: absolute;
+  padding-left: 15px;
+  animation: seta 0.5s ease-in 0s infinite alternate;
+}
+
+.card-call:hover {
+  color: #2f4073;
+}
+
+.btn-branco {
+  text-transform: uppercase;
+  display: block;
   background: none;
-  border: 3px solid #5c8ef2;
   padding: 10px 20px;
-  margin-bottom: 30px;
   cursor: pointer;
 }
 
-.btn:hover {
-  background: #5c8ef2;
+.btn-branco:hover, .card-call:hover {
   -webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: all;
@@ -212,43 +200,23 @@ body {
   transition-delay: 0s;
 }
 
-.btn-call {
-  border-color: #2f4073;
+*:hover {
+  -webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
+  transition-duration: 0.35s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
 }
 
-.btn-call:hover {
+.btn-branco {
+  border: 3px solid #f2f2f2;
   color: #f2f2f2;
-  background: #2f4073;
 }
 
-.subtitulo {
-  text-transform: uppercase;
-  text-align: center;
+.btn-branco:hover {
+  background: #f2f2f2;
   color: #262626;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.titulo {
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 50px;
-  color: #262626;
-}
-
-.titulo-interno {
-  text-transform: uppercase;
-  padding-bottom: 30px;
-  color: #262626;
-}
-
-.titulo-interno::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #262626;
 }
 
 .header {
@@ -256,143 +224,32 @@ body {
   display: flex;
 }
 
-.menu {
+.link-menu {
+  color: #f2f2f2;
+  padding: 10px;
+}
+
+.link-menu:hover {
+  color: #5c8ef2;
+  -webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
+  transition-duration: 0.35s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+
+.menu-superior {
   display: flex;
   padding: 25px 0;
   align-items: center;
   justify-content: space-between;
 }
-.menu .header-menu li {
+.menu-superior .header-menu li {
   display: inline-block;
 }
-.menu .header-menu li a {
-  color: #f2f2f2;
+.menu-superior .header-menu li a {
   text-transform: uppercase;
-  padding: 10px;
-}
-
-.intro {
-  padding: 80px 0;
-  background: url("../img/intro.jpg") no-repeat center center;
-}
-.intro .quote {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-.intro .quote p {
-  text-align: center;
-}
-.intro .quote cite {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.servicos {
-  background: #f2f2f2;
-  padding-bottom: 60px;
-}
-.servicos ul {
-  display: flex;
-}
-.servicos .servico-item h2 {
-  text-transform: uppercase;
-  color: #5c8ef2;
-  padding: 30px 0;
-}
-.servicos .servico-item p {
-  margin-left: 30px;
-  padding-bottom: 50px;
-}
-.servicos > .btn {
-  color: #262626;
-}
-.servicos > .btn:hover {
-  color: #f2f2f2;
-}
-
-.sobre {
-  background: #262626;
-  padding: 60px 0;
-}
-.sobre h2 {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.clientes-lista {
-  display: flex;
-}
-.clientes-lista .cliente-item {
-  background: linear-gradient(180deg, #e3e3e3, #f2f2f2);
-}
-.clientes-lista .cliente-item .detalhes span {
-  display: block;
-  color: #5c8ef2;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-.clientes-lista .cliente-item .btn:hover {
-  color: #f2f2f2;
-}
-
-.clientes .btn {
-  color: #262626;
-}
-.clientes > .btn:hover {
-  color: #f2f2f2;
-}
-
-.typewriter {
-  padding: 60px 0;
-  background: #262626;
-}
-.typewriter h1::after {
-  content: "|";
-  margin-left: 2px;
-  opacity: 1;
-  animation: blink 0.7s infinite;
-}
-
-.contato {
-  background: #f2f2f2;
-  padding-bottom: 60px;
-}
-.contato div {
-  display: flex;
-}
-.contato p {
-  color: #2f4073;
-}
-.contato .contato-form {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.contato .contato-form label {
-  text-transform: uppercase;
-  color: #2f4073;
-  margin-bottom: 5px;
-  width: 100%;
-}
-.contato .contato-form .input {
-  width: 100%;
-  padding: 10px 10px;
-  border: none;
-  border-bottom: 2px solid #262626;
-  background: transparent;
-  margin-bottom: 30px;
-}
-.contato .contato-form .btn {
-  border: 2px solid #2f4073;
-  color: #262626;
-  padding: 10px 20px;
-  margin: 0;
-}
-.contato .contato-form .btn:hover {
-  background: #2f4073;
-  color: #f2f2f2;
 }
 
 .footer {
@@ -410,281 +267,13 @@ body {
   color: #4b75f2;
   margin-top: 60px;
   margin-bottom: 30px;
+  margin-left: 10px;
 }
 .footer .redes li,
 .footer .contato-footer li {
   display: block;
   margin-bottom: 10px;
 }
-.footer .redes li a,
-.footer .contato-footer li a {
-  color: #f2f2f2;
-  padding: 10px 0;
-}
-
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-.sobre-interna {
-  background: #f2f2f2;
-  padding-top: 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.sobre-interna div {
-  margin-left: 20px;
-}
-.sobre-interna div p {
-  max-width: 580px;
-  color: #262626;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.beneficios {
-  background: #f2f2f2;
-  padding: 60px 0;
-}
-.beneficios .lista-beneficios {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.beneficios .lista-beneficios::after {
-  content: "";
-  position: absolute;
-  left: 600px;
-  display: block;
-  width: 2px;
-  top: -1px;
-  height: 954px;
-  background: #5c8ef2;
-}
-.beneficios .beneficio {
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr 6fr;
-  grid-template-areas: ". area1 . area2";
-  margin-bottom: 40px;
-}
-.beneficios .beneficio p {
-  grid-area: area2;
-  color: #262626;
-}
-.beneficios .beneficio div {
-  grid-area: area1;
-  margin-left: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 280px;
-}
-.beneficios .beneficio div img {
-  height: 70px;
-  width: 70px;
-  margin-bottom: 5px;
-}
-.beneficios .beneficio div span {
-  color: #262626;
-}
-.beneficios .beneficio:nth-child(odd) p {
-  grid-area: area1;
-}
-.beneficios .beneficio:nth-child(odd) div {
-  grid-area: area2;
-}
-
-.contato-interna {
-  background: #262626;
-  padding-bottom: 60px;
-}
-.contato-interna h1 {
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 60px;
-}
-.contato-interna h1::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #f2f2f2;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 60px;
-}
-.contato-interna p {
-  text-align: center;
-  margin-bottom: 10px;
-}
-.contato-interna .btn {
-  border-color: #f2f2f2;
-}
-.contato-interna .btn:hover {
-  background: #f2f2f2;
-  color: #262626;
-}
-
-.estudos {
-  padding: 60px 0;
-}
-.estudos ul {
-  display: flex;
-}
-.estudos .estudo-item div {
-  background: #e3e3e3;
-  height: 100px;
-}
-.estudos .estudo-item div span {
-  display: block;
-  text-transform: uppercase;
-  color: #5c8ef2;
-  padding: 10px 0;
-}
-.estudos .estudo-item div span::before {
-  content: "";
-  display: inline-block;
-  width: 30px;
-  height: 2px;
-  margin-right: 10px;
-  margin-left: 15px;
-  background: #5c8ef2;
-  margin-bottom: 2px;
-}
-.estudos .estudo-item div p {
-  color: #262626;
-  margin-left: 15px;
-}
-
-.servicos-interna .titulo {
-  text-align: left;
-  text-transform: initial;
-  padding: 60px 0 0 0;
-}
-.servicos-interna .titulo::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #262626;
-  margin-top: 10px;
-}
-.servicos-interna p {
-  color: #262626;
-  margin-top: 30px;
-}
-.servicos-interna .lista-servicos {
-  margin: 60px 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-.servicos-interna .lista-servicos .servico {
-  background: #2f4073;
-  padding: 25px;
-  border-bottom: 3px solid #5c8ef2;
-  margin-bottom: 20px;
-}
-.servicos-interna .lista-servicos .servico img {
-  margin-bottom: 20px;
-}
-.servicos-interna .lista-servicos .servico p {
-  line-height: 1.4;
-  height: 200px;
-  margin-top: 20px;
-  color: #f2f2f2;
-}
-.servicos-interna .lista-servicos .servico a {
-  color: #f2f2f2;
-  position: relative;
-  padding: 10px;
-}
-.servicos-interna .lista-servicos .servico a::after {
-  content: "→";
-  position: absolute;
-  padding-left: 15px;
-  animation: seta 0.5s ease-in 0s infinite alternate;
-}
-
-.servicos-contato {
-  background: #262626;
-}
-.servicos-contato > div {
-  display: flex;
-}
-.servicos-contato > div h2 {
-  margin-top: 60px;
-  line-height: 1.4;
-}
-.servicos-contato > div ul li p {
-  line-height: 1;
-  margin-bottom: 5px;
-}
-.servicos-contato > div ul li span {
-  display: block;
-  margin-bottom: 60px;
-}
-.servicos-contato > div form {
-  margin-top: 30px;
-}
-.servicos-contato > div form input[type=text],
-.servicos-contato > div form input[type=email] {
-  width: calc(50% - 10px);
-  border: 3px solid #f2f2f2;
-  background: transparent;
-  padding: 10px;
-  color: #f2f2f2;
-}
-.servicos-contato > div form input[type=text] {
-  margin-right: 16px;
-}
-.servicos-contato > div form textarea {
-  display: block;
-  width: 100%;
-  height: 200px;
-  margin-top: 20px;
-  border: 3px solid #f2f2f2;
-  background: transparent;
-  padding: 10px;
-  color: #f2f2f2;
-}
-.servicos-contato > div form .btn {
-  margin-top: 20px;
-  border-color: #f2f2f2;
-  float: right;
-}
-.servicos-contato > div form .btn:hover {
-  background: #f2f2f2;
-  color: #262626;
-}
-.servicos-contato .titulo {
-  text-align: left;
-  color: #f2f2f2;
-}
-.servicos-contato .titulo::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #f2f2f2;
-  margin-top: 10px;
-}
-
-.typewriter-servicos {
-  background: #f2f2f2;
-}
-.typewriter-servicos h1 {
-  color: #262626;
-}
-
 @keyframes seta {
   from {
     transform: translate3d(3px, 0, 0);
