@@ -95,41 +95,4 @@
 
 .estudos {
     padding: 60px 0;
-
-    .estudo-item {
-        background: $bg;
-
-        div {
-            height: 150px;
-            flex-direction: column;
-
-            p {
-                @extend %bold16;
-                color: $preto;
-                margin-left: 15px;
-                line-height: 1.4;
-                flex-grow: 1;
-            }
-        }
-
-
-    }
-
-    .estudo-item:hover {
-        cursor: pointer;
-        transform: scale(1.05);
-    }
-
-    .estudo-item:hover a,
-    .estudo-item:hover span {
-        color: $azulEscuro;
-    }
-
-    .estudo-item:hover a {
-        font-weight: bold;
-    }
-
-    .estudo-item:hover span::before {
-        background: $azulEscuro;
-    }
 }

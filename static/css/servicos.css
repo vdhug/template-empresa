@@ -1,3 +1,54 @@
+.lista-servicos .servico p {
+  font-size: 1.125rem;
+  font-weight: lighter;
+}
 
+.lista-servicos .servico h2 {
+  font-size: 1.953rem;
+  font-weight: bold;
+}
+
+.servicos-interna {
+  padding: 60px 0;
+}
+
+.lista-servicos {
+  margin: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lista-servicos .servico {
+  background: #2f4073;
+  flex-direction: column;
+  padding: 25px;
+  border-bottom: 3px solid #5c8ef2;
+  margin-bottom: 20px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transform: translateZ(0) scale(1, 1);
+}
+.lista-servicos .servico img {
+  margin-bottom: 20px;
+  width: 32px;
+  height: 32px;
+}
+.lista-servicos .servico p {
+  flex-grow: 1;
+  margin: 20px 0;
+}
+.lista-servicos .servico .card-call {
+  color: #f2f2f2;
+  padding-left: 0;
+}
+.lista-servicos .servico:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.typewriter-servicos {
+  background: #f2f2f2;
+}
+.typewriter-servicos h1 {
+  color: #262626;
+}
 
 /*# sourceMappingURL=servicos.css.map */

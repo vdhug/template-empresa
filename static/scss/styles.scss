@@ -29,6 +29,8 @@ li {
 * {
     box-sizing: border-box;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -61,6 +63,32 @@ body {
 // Definindo classe flex
 .flex {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.bg-preto {
+    background: $preto;
+}
+
+.bg-branco {
+    background: $branco !important;
+}
+
+// Estilo typewritter
+.typewriter {
+    padding: 60px 0;
+    background: $preto;
+
+    h1 {
+        @extend %bold48;
+    }
+
+    h1::after {
+        content: "|";
+        margin-left: 2px;
+        opacity: 1;
+        animation: blink 0.7s infinite;
+    }
 }
 
 
@@ -122,6 +150,11 @@ body {
     color: $preto;
 }
 
+.texto-branco {
+    @extend %texto;
+    color: $branco;
+}
+
 .texto-call {
     @extend %light18;
     text-align: center;
@@ -165,6 +198,11 @@ body {
     color: $azulEscuro;
 }
 
+.subtitulo-interna {
+    @extend %light18;
+    color: $preto;
+}
+
 // Estilos de botoes
 %btn {
     @extend %bold20;
@@ -203,6 +241,19 @@ body {
     @extend %btn-hover;
     background: $branco;
     color: $preto;
+}
+
+
+.btn-preto {
+    @extend %btn;
+    border: 3px solid $preto;
+    color: $preto;
+}
+
+.btn-preto:hover {
+    @extend %btn-hover;
+    background: $preto;
+    color: $branco;
 }
 
 // Estilo header
@@ -284,4 +335,89 @@ body {
     }
 
     to {}
+}
+
+// Estilos de estudo de caso
+.estudo-item {
+    background: $bg;
+
+    div {
+        height: 150px;
+        flex-direction: column;
+
+        p {
+            @extend %bold16;
+            color: $preto;
+            margin-left: 15px;
+            line-height: 1.4;
+            flex-grow: 1;
+
+        }
+    }
+}
+
+.estudo-item:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+// Definindo estilo de componente de contato
+
+.contato {
+    background: $preto;
+    padding: 60px 0;
+
+    h2 {
+        @extend %bold31;
+        line-height: 1.3;
+    }
+
+    .info {
+        p {
+            @extend %regular25;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+
+        span {
+            display: block;
+            @extend %bold31;
+            margin-bottom: 60px;
+        }
+    }
+
+    .contato-form {
+        margin-top: 30px;
+
+        .input {
+            width: calc(50% - 10px);
+            border: 3px solid $branco;
+            background: transparent;
+            padding: 10px;
+            @extend %regular18;
+            color: $branco;
+
+        }
+
+        input[type='text'] {
+            margin-right: 16px;
+        }
+
+        .area {
+            display: block;
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+            border: 3px solid $branco;
+            background: transparent;
+            padding: 10px;
+            @extend %regular18;
+            color: $branco;
+        }
+
+        .btn-branco {
+            margin-top: 20px;
+            float: right;
+        }
+    }
 }

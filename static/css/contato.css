@@ -1,0 +1,23 @@
+.contato-interna h2 {
+  color: #262626;
+}
+.contato-interna .info p {
+  color: #262626;
+}
+.contato-interna .info span {
+  color: #262626;
+}
+.contato-interna .contato-form .input {
+  border: 3px solid #262626;
+  color: #262626;
+}
+.contato-interna .contato-form .area {
+  border: 3px solid #262626;
+  color: #262626;
+}
+.contato-interna .contato-form .btn-preto {
+  margin-top: 20px;
+  float: right;
+}
+
+/*# sourceMappingURL=contato.css.map */

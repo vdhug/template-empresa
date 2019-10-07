@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function executarMaquina() {
         frases.forEach((frase, i) => {
-            type = setTimeout(() => {
+            setTimeout(() => {
                 typeWriter(local, frase);
             }, 0 + (4000 * i));
             if (i !== 2) {
@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     eraseWriter(local, frase);
                 }, 3000 + (4000 * i));
             }
-
         });
     }
 
@@ -67,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     observer.observe(local);
-
 
 
 });

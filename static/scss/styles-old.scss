@@ -679,37 +679,7 @@ body {
     display: flex;
   }
 
-  .estudo-item {
-    div {
-      background: $bg;
-      height: 100px;
 
-      span {
-        display: block;
-        @extend %bold10;
-        text-transform: uppercase;
-        color: $azulClaro;
-        padding: 10px 0;
-      }
-
-      span::before {
-        content: "";
-        display: inline-block;
-        width: 30px;
-        height: 2px;
-        margin-right: 10px;
-        margin-left: 15px;
-        background: $azulClaro;
-        margin-bottom: 2px;
-      }
-
-      p {
-        @extend %bold16;
-        color: $preto;
-        margin-left: 15px;
-      }
-    }
-  }
 }
 
 .servicos-interna {

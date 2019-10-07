@@ -3,11 +3,6 @@
   font-weight: lighter;
 }
 
-.estudos .estudo-item div p {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
 .sobre-interna {
   margin: 60px 0;
   display: grid;
@@ -85,33 +80,6 @@
 
 .estudos {
   padding: 60px 0;
-}
-.estudos .estudo-item {
-  background: #e3e3e3;
-}
-.estudos .estudo-item div {
-  height: 150px;
-  flex-direction: column;
-}
-.estudos .estudo-item div p {
-  color: #262626;
-  margin-left: 15px;
-  line-height: 1.4;
-  flex-grow: 1;
-}
-.estudos .estudo-item:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-}
-.estudos .estudo-item:hover a,
-.estudos .estudo-item:hover span {
-  color: #2f4073;
-}
-.estudos .estudo-item:hover a {
-  font-weight: bold;
-}
-.estudos .estudo-item:hover span::before {
-  background: #2f4073;
 }
 
 /*# sourceMappingURL=sobre.css.map */

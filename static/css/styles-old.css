@@ -127,13 +127,8 @@ body {
   font-weight: bold;
 }
 
-.estudos .estudo-item div p, .footer .footer-titulo, .clientes-lista .cliente-item .detalhes span, .servicos .servico-item h2 {
+.footer .footer-titulo, .clientes-lista .cliente-item .detalhes span, .servicos .servico-item h2 {
   font-size: 1rem;
-  font-weight: bold;
-}
-
-.estudos .estudo-item div span {
-  font-size: 0.64rem;
   font-weight: bold;
 }
 
@@ -564,30 +559,6 @@ body {
 }
 .estudos ul {
   display: flex;
-}
-.estudos .estudo-item div {
-  background: #e3e3e3;
-  height: 100px;
-}
-.estudos .estudo-item div span {
-  display: block;
-  text-transform: uppercase;
-  color: #5c8ef2;
-  padding: 10px 0;
-}
-.estudos .estudo-item div span::before {
-  content: "";
-  display: inline-block;
-  width: 30px;
-  height: 2px;
-  margin-right: 10px;
-  margin-left: 15px;
-  background: #5c8ef2;
-  margin-bottom: 2px;
-}
-.estudos .estudo-item div p {
-  color: #262626;
-  margin-left: 15px;
 }
 
 .servicos-interna .titulo {

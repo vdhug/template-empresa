@@ -1,0 +1,39 @@
+@import 'colors';
+@import 'tipografias';
+
+.contato-interna {
+
+    h2 {
+        color: $preto;
+    }
+
+    .info {
+        p {
+            color: $preto;
+        }
+
+        span {
+            color: $preto;
+        }
+    }
+
+    .contato-form {
+
+
+        .input {
+            border: 3px solid $preto;
+            color: $preto;
+
+        }
+
+        .area {
+            border: 3px solid $preto;
+            color: $preto;
+        }
+
+        .btn-preto {
+            margin-top: 20px;
+            float: right;
+        }
+    }
+}

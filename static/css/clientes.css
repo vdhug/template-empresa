@@ -1,0 +1,45 @@
+.quebra-cliente h3,
+.quebra-cliente a {
+  font-size: 1.953rem;
+  font-weight: normal;
+}
+
+.clientes-interna {
+  padding: 60px 0;
+}
+.clientes-interna .titulo-preto {
+  margin-bottom: 30px;
+}
+.clientes-interna .subtitulo-interna {
+  margin-bottom: 40px;
+}
+
+.nossos-clientes {
+  padding: 60px 0;
+}
+
+.clientes-lista {
+  margin-top: 60px;
+}
+
+.cliente {
+  margin-bottom: 20px;
+}
+
+.quebra-cliente {
+  padding: 60px;
+}
+.quebra-cliente h3,
+.quebra-cliente a {
+  color: #262626;
+}
+.quebra-cliente a {
+  font-weight: bold;
+  color: #4b75f2;
+  text-decoration: underline;
+}
+.quebra-cliente a:hover {
+  color: #2f4073;
+}
+
+/*# sourceMappingURL=clientes.css.map */

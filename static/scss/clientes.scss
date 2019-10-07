@@ -1,0 +1,46 @@
+@import 'colors';
+@import 'tipografias';
+
+.clientes-interna {
+    padding: 60px 0;
+
+    .titulo-preto {
+        margin-bottom: 30px;
+    }
+
+    .subtitulo-interna {
+        margin-bottom: 40px;
+    }
+}
+
+.nossos-clientes {
+    padding: 60px 0;
+}
+
+.clientes-lista {
+    margin-top: 60px;
+}
+
+.cliente {
+    margin-bottom: 20px;
+}
+
+.quebra-cliente {
+    padding: 60px;
+
+    h3,
+    a {
+        @extend %regular31;
+        color: $preto;
+    }
+
+    a {
+        font-weight: bold;
+        color: $azulMedio;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: $azulEscuro;
+    }
+}
