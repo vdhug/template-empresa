@@ -1,5 +1,15 @@
-@media only screen and (min-width: 960px) and (max-width: 1199px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
     .container {
         max-width: 960px;
+    }
+
+    .beneficios {
+
+        .lista-beneficios::after {
+
+            height: 1270px;
+            left: 475px;
+
+        }
     }
 }

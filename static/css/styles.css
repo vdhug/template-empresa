@@ -352,9 +352,6 @@ body {
 .estudo-item {
   background: #e3e3e3;
 }
-.estudo-item div {
-  flex-direction: column;
-}
 
 .estudo-info {
   display: flex;
@@ -365,10 +362,11 @@ body {
 }
 .estudo-info p {
   color: #262626;
-  flex-grow: 2;
+  flex-grow: 1;
   line-height: 1.4;
   margin-left: 15px;
   margin-bottom: 30px;
+  height: 60px;
 }
 .estudo-info a {
   margin-left: 5px;
