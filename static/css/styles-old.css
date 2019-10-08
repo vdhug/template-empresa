@@ -450,11 +450,6 @@ body {
     opacity: 0;
   }
 }
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
 .sobre-interna {
   background: #f2f2f2;
   padding-top: 60px;

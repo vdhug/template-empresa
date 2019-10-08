@@ -40,7 +40,7 @@
   font-weight: bold;
 }
 
-.btn-preto, .btn-branco {
+.btn-preto, .btn-azul, .btn-branco {
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -228,7 +228,7 @@ body {
   color: #262626;
 }
 
-.btn-preto, .btn-branco {
+.btn-preto, .btn-azul, .btn-branco {
   text-transform: uppercase;
   display: block;
   background: none;
@@ -236,7 +236,7 @@ body {
   cursor: pointer;
 }
 
-.btn-preto:hover, .btn-branco:hover, .card-call:hover {
+.btn-preto:hover, .btn-azul:hover, .btn-branco:hover, .card-call:hover {
   -webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: all;
@@ -262,6 +262,16 @@ body {
 .btn-branco:hover {
   background: #f2f2f2;
   color: #262626;
+}
+
+.btn-azul {
+  border: 3px solid #2f4073;
+  color: #2f4073;
+}
+
+.btn-azul:hover {
+  background: #2f4073;
+  color: #f2f2f2;
 }
 
 .btn-preto {
@@ -332,6 +342,11 @@ body {
 @keyframes seta {
   from {
     transform: translate3d(3px, 0, 0);
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 .estudo-item {

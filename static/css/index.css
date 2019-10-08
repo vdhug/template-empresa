@@ -1,0 +1,262 @@
+.card-tecnologia .card-chamada-servico p, .card-tecnologia ul li, .lista-servicos .card-servico .caracteristicas li, .lista-servicos .card-servico p {
+  font-size: 1.125rem;
+  font-weight: lighter;
+}
+
+.chamada, .opiniao cite {
+  font-size: 1.953rem;
+  font-weight: normal;
+}
+
+.card-contato p {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
+.metodologia .card-metodologia span {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.lista-servicos .card-servico span {
+  font-size: 2.441rem;
+  font-weight: bold;
+}
+
+.card-tecnologia .card-chamada-servico h3, .card-tecnologia h2, .lista-servicos .card-servico h2, .card-contato h2 {
+  font-size: 1.953rem;
+  font-weight: bold;
+}
+
+.contato h2 {
+  font-size: 1.563rem;
+  font-weight: bold;
+}
+
+.metodologia .card-metodologia h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.trabalhos {
+  padding: 60px 0;
+}
+.trabalhos .titulo-preto {
+  margin-bottom: 30px;
+}
+
+.lista-trabalhos {
+  margin-top: 40px;
+}
+
+.card-contato {
+  background: #2f4073;
+  padding: 25px;
+  flex-direction: column;
+}
+.card-contato p {
+  margin-top: 30px;
+  flex-grow: 1;
+}
+.card-contato .btn-branco {
+  align-self: flex-start;
+}
+
+.opiniao {
+  background: #262626;
+  padding: 60px 0;
+}
+.opiniao img {
+  margin: 0 auto;
+}
+.opiniao cite {
+  display: block;
+  margin: 60px auto 0;
+  font-style: normal;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.servicos {
+  padding-top: 60px;
+  flex-direction: column;
+}
+
+.lista-servicos {
+  margin-top: 40px;
+}
+.lista-servicos .card-servico {
+  display: flex;
+  flex-direction: column;
+}
+.lista-servicos .card-servico span {
+  display: block;
+  color: #262626;
+}
+.lista-servicos .card-servico h2 {
+  color: #262626;
+  margin-top: 10px;
+}
+.lista-servicos .card-servico p {
+  color: #262626;
+  margin-top: 10px;
+}
+.lista-servicos .card-servico .caracteristicas {
+  margin-top: 40px;
+  flex-grow: 1;
+}
+.lista-servicos .card-servico .caracteristicas li {
+  color: #262626;
+  margin-bottom: 10px;
+}
+.lista-servicos .card-servico .caracteristicas li::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #262626;
+  margin-right: 15px;
+  border-radius: 50%;
+  margin-bottom: 3px;
+}
+.lista-servicos .card-servico .btn-preto {
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.chamada {
+  margin-top: 60px;
+  background: #2f4073;
+  padding: 60px 60px 60px 100px;
+  align-self: flex-end;
+  max-width: 925px;
+}
+.chamada a {
+  color: #f2f2f2;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.metodologia {
+  background: #262626;
+  padding: 60px 0;
+}
+.metodologia .titulo-branco {
+  margin-bottom: 30px;
+}
+.metodologia .subtitulo-interna {
+  color: #f2f2f2;
+}
+.metodologia .lista-metodos {
+  margin-top: 40px;
+}
+.metodologia .card-metodologia {
+  background: #f2f2f2;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.metodologia .card-metodologia h3 {
+  color: #262626;
+  margin-top: 20px;
+  margin-left: 20px;
+  flex-grow: 1;
+}
+.metodologia .card-metodologia span {
+  display: block;
+  color: #f2f2f2;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  background: #2f4073;
+  align-self: flex-start;
+}
+.metodologia .card-contato {
+  margin-bottom: 20px;
+}
+
+.tecnologias {
+  padding: 60px 0;
+}
+
+.lista-tecnologias {
+  margin-top: 40px;
+  flex-direction: column;
+}
+
+.card-tecnologia {
+  background: #2f4073;
+  align-self: flex-end;
+  justify-content: space-between;
+  border-bottom: 3px solid #5c8ef2;
+}
+.card-tecnologia h2 {
+  margin-top: 25px;
+  margin-left: 25px;
+  max-width: 240px;
+}
+.card-tecnologia h2::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  width: 60px;
+  height: 3px;
+  background: #f2f2f2;
+}
+.card-tecnologia ul {
+  margin-top: 25px;
+  margin-right: 25px;
+  flex-grow: 1;
+}
+.card-tecnologia ul li {
+  margin-bottom: 25px;
+}
+.card-tecnologia .card-chamada-servico {
+  width: 370px;
+  background: #e3e3e3;
+  margin: 0;
+  padding: 70px 0 40px 30px;
+}
+.card-tecnologia .card-chamada-servico p {
+  color: #262626;
+}
+.card-tecnologia .card-chamada-servico h3 {
+  color: #2f4073;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+.sobre {
+  background: #262626;
+  padding-top: 60px;
+  flex-direction: column;
+}
+.sobre .subtitulo-interna {
+  color: #f2f2f2;
+}
+
+.contato {
+  background: #f2f2f2;
+}
+.contato h2 {
+  color: #262626;
+}
+.contato .contato-form {
+  margin-top: 0px;
+}
+.contato .contato-form .input,
+.contato .contato-form .area {
+  border: none;
+  border-bottom: 2px solid #262626;
+  color: #262626;
+  width: 100%;
+  margin-top: 10px;
+}
+.contato .contato-form .btn-preto {
+  float: right;
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=index.css.map */

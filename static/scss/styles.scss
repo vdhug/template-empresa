@@ -243,6 +243,18 @@ body {
     color: $preto;
 }
 
+.btn-azul {
+    @extend %btn;
+    border: 3px solid $azulEscuro;
+    color: $azulEscuro;
+}
+
+.btn-azul:hover {
+    @extend %btn-hover;
+    background: $azulEscuro;
+    color: $branco;
+}
+
 
 .btn-preto {
     @extend %btn;
@@ -335,6 +347,18 @@ body {
     }
 
     to {}
+}
+
+
+
+@keyframes blink {
+
+    0%,
+    100% {}
+
+    50% {
+        opacity: 0;
+    }
 }
 
 // Estilos de estudo de caso
