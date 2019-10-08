@@ -366,19 +366,43 @@ body {
     background: $bg;
 
     div {
-        height: 150px;
         flex-direction: column;
 
-        p {
-            @extend %bold16;
-            color: $preto;
-            margin-left: 15px;
-            line-height: 1.4;
-            flex-grow: 1;
 
-        }
+        // p {
+        //     @extend %bold16;
+        //     color: $preto;
+        //     line-height: 1.4;
+        //     flex-grow: 1;
+        // }
+
+
     }
 }
+
+.estudo-info {
+    display: flex;
+
+    span {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        @extend %bold16;
+        color: $preto;
+        flex-grow: 2;
+        line-height: 1.4;
+        margin-left: 15px;
+        margin-bottom: 30px;
+    }
+
+    a {
+        margin-left: 5px;
+    }
+}
+
+.estudo-info {}
 
 .estudo-item:hover {
     cursor: pointer;

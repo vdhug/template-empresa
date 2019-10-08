@@ -45,7 +45,7 @@
   font-weight: bold;
 }
 
-.estudo-item div p, .footer .footer-titulo {
+.estudo-info p, .footer .footer-titulo {
   font-size: 1rem;
   font-weight: bold;
 }
@@ -353,14 +353,25 @@ body {
   background: #e3e3e3;
 }
 .estudo-item div {
-  height: 150px;
   flex-direction: column;
 }
-.estudo-item div p {
+
+.estudo-info {
+  display: flex;
+}
+.estudo-info span {
+  height: 40px;
+  margin-bottom: 10px;
+}
+.estudo-info p {
   color: #262626;
-  margin-left: 15px;
+  flex-grow: 2;
   line-height: 1.4;
-  flex-grow: 1;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+.estudo-info a {
+  margin-left: 5px;
 }
 
 .estudo-item:hover {
