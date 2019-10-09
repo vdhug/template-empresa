@@ -9,40 +9,65 @@
     <link rel="stylesheet" href="static/css/layout.css">
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/sobre.css">
+    <link rel="stylesheet" href="static/css/menu.css">
     <link rel="stylesheet" href="static/css/responsivo.css">
+    <script src="static/js/main.js"></script>
 </head>
 
 <body>
+
     <header class="header">
-        <div class="container menu-superior grid-12">
+
+        <div class="menu-superior grid-12">
+            <div class="menu-wrapper">
+                <div class="hamburger-menu"></div>
+            </div>
             <a href="/index.html"><img src="static/img/Potious.png" alt="Logotipo da Potious"></a>
+
             <nav class="header-menu">
-                <ul>
-                    <li><a class="link-menu" href="#">sobre</a></li>
-                    <li><a class="link-menu" href="#">serviços</a></li>
-                    <li><a class="link-menu" href="#">clientes</a></li>
-                    <li><a class="link-menu" href="#">blog</a></li>
-                    <li><a class="link-menu" href="#">contato</a></li>
+                <ul class="">
+                    <li><a class="link-menu" href="sobre.html">sobre</a></li>
+                    <li><a class="link-menu" href="servicos.html">serviços</a></li>
+                    <li><a class="link-menu" href="clientes.html">clientes</a></li>
+                    <li><a class="link-menu" href="blog.html">blog</a></li>
+                    <li><a class="link-menu" href="contato.html">contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <nav class="menu-mobile">
+        <ul class="">
+            <li><a class="link-menu" href="sobre.html">sobre</a></li>
+            <li><a class="link-menu" href="servicos.html">serviços</a></li>
+            <li><a class="link-menu" href="clientes.html">clientes</a></li>
+            <li><a class="link-menu" href="blog.html">blog</a></li>
+            <li><a class="link-menu" href="contato.html">contato</a></li>
+        </ul>
+    </nav>
 
     <section class="sobre-interna">
         <img src="static/img/bg-sobre.jpg" alt="Sobre">
         <div class="sobre-descricao">
             <h1 class="titulo-preto">Sobre</h1>
             <p class="texto-preto">
-                A Potious é uma empresa de design, desenvolvimento de software e marketing digital. Atuamos na criação e aprimoramento de identidade visual, gerenciamento de mídias sociais, planejamento e aplicação de estratégias de marketing digital. A Potious foi fundada no ano de 2019 por um jovem acreano após adquirir experiência trabalhando em empresas internacionais no México e Bélgica.
+                A Potious é uma empresa de design, desenvolvimento de software e marketing digital. Atuamos na criação e
+                aprimoramento de identidade visual, gerenciamento de mídias sociais, planejamento e aplicação de
+                estratégias de marketing digital. A Potious foi fundada no ano de 2019 por um jovem acreano após
+                adquirir experiência trabalhando em empresas internacionais no México e Bélgica.
             </p>
             <p class="texto-preto">
-                A Potious é o lar de pessoas corajosas e orientadas a desafios que oferecem muito mais que habilidades técnicas. Trabalhamos usando a estrutura de gerenciamento de holacracia. Ela nos permite maximizar nosso potencial e dividir o poder de decisão entre os que compõem a empresa provendo um ambiente único de proatividade e responsabilidade.
+                A Potious é o lar de pessoas corajosas e orientadas a desafios que oferecem muito mais que habilidades
+                técnicas. Trabalhamos usando a estrutura de gerenciamento de holacracia. Ela nos permite maximizar nosso
+                potencial e dividir o poder de decisão entre os que compõem a empresa provendo um ambiente único de
+                proatividade e responsabilidade.
             </p>
-            <p class="texto-preto">                
+            <p class="texto-preto">
                 Estamos sediados em Senador Guiomard - Acre - e operamos em todo o país e em países estrangeiros.
             </p>
         </div>
     </section>
+
 
     <section class="beneficios">
         <div class="container">
@@ -50,7 +75,11 @@
             <ul class="lista-beneficios">
                 <li class="beneficio">
                     <p class="texto-preto">
-                        Quais seus benefícios, você pergunta? Tudo! Uma das primeiras coisas que você precisa saber sobre a Potious é que você pode se sentir seguro conosco. Somos uma extensão de seu time, trabalhando juntos para o mesmo objetivo. Você não precisa saber tudo sobre desenvolvimento de software, design de UX ou sobre marketing digital. Essa é a nossa função e você pode confiar em nós para cumprir. Por quê?
+                        Quais seus benefícios, você pergunta? Tudo! Uma das primeiras coisas que você precisa saber
+                        sobre a Potious é que você pode se sentir seguro conosco. Somos uma extensão de seu time,
+                        trabalhando juntos para o mesmo objetivo. Você não precisa saber tudo sobre desenvolvimento de
+                        software, design de UX ou sobre marketing digital. Essa é a nossa função e você pode confiar em
+                        nós para cumprir. Por quê?
                     </p>
                     <div class="flex">
                         <img src="static/img/seguranca.png" alt="Segurança">
@@ -61,7 +90,10 @@
 
                 <li class="beneficio">
                     <p class="texto-preto">
-                        Não temos nada a esconder e somos totalmente transparentes e honestos. Isso significa que você sempre terá acesso total a todos os membros da equipe e suas habilidades. Nosso pessoal está sempre pronto para responder às suas dúvidas. Mas o que acontece se você decidir mudar a meta no meio do trabalho?
+                        Não temos nada a esconder e somos totalmente transparentes e honestos. Isso significa que você
+                        sempre terá acesso total a todos os membros da equipe e suas habilidades. Nosso pessoal está
+                        sempre pronto para responder às suas dúvidas. Mas o que acontece se você decidir mudar a meta no
+                        meio do trabalho?
                     </p>
                     <div class="flex">
                         <img src="static/img/transparencia.png" alt="Transparência">
@@ -72,7 +104,11 @@
 
                 <li class="beneficio">
                     <p class="texto-preto">
-                        Não se preocupe com isso - na Potious, a tolerância para mudanças está em nosso DNA. Não existe um escopo fixo para nós, e sabemos que nos negócios tudo muda constantemente. Você pode trazer idéias para a mesa em todas as etapas do processo de desenvolvimento e encontrará total suporte. Graças a essa abordagem, você pode responder rapidamente às necessidades do cliente e às mudanças do mercado.
+                        Não se preocupe com isso - na Potious, a tolerância para mudanças está em nosso DNA. Não existe
+                        um escopo fixo para nós, e sabemos que nos negócios tudo muda constantemente. Você pode trazer
+                        idéias para a mesa em todas as etapas do processo de desenvolvimento e encontrará total suporte.
+                        Graças a essa abordagem, você pode responder rapidamente às necessidades do cliente e às
+                        mudanças do mercado.
                     </p>
                     <div class="flex">
                         <img src="static/img/flexibilidade.png" alt="Flexibilidade">
@@ -83,7 +119,10 @@
 
                 <li class="beneficio">
                     <p class="texto-preto">
-                        Processos orientados ao alcance de objetivos. Nossa equipe irá trabalhar para entender seu negócio e definir a melhor abordagem para o alcance de suas metas de negócios. O time agrega o conhecimento de experiências semelhantes para definir o plano de execução de seu projeto desde o designer até a criação de campanhas.
+                        Processos orientados ao alcance de objetivos. Nossa equipe irá trabalhar para entender seu
+                        negócio e definir a melhor abordagem para o alcance de suas metas de negócios. O time agrega o
+                        conhecimento de experiências semelhantes para definir o plano de execução de seu projeto desde o
+                        designer até a criação de campanhas.
                     </p>
                     <div class="flex">
                         <img src="static/img/processo.png" alt="Processo">
@@ -94,7 +133,11 @@
 
                 <li class="beneficio">
                     <p class="texto-preto">
-                        Graças a esse conjunto de características, somos capazes de fornecer serviços digitais de excelente qualidade. Nossos serviços vão muito além de desenvolvimento de websites: também oferecemos gerenciamento de mídias sociais, criação de campanhas de marketing digital, designer de marca, atualização de marca, criação de papelaria de empresa. Estamos trabalhando juntos em um objetivo mútuo - alcançar seus objetivos.
+                        Graças a esse conjunto de características, somos capazes de fornecer serviços digitais de
+                        excelente qualidade. Nossos serviços vão muito além de desenvolvimento de websites: também
+                        oferecemos gerenciamento de mídias sociais, criação de campanhas de marketing digital, designer
+                        de marca, atualização de marca, criação de papelaria de empresa. Estamos trabalhando juntos em
+                        um objetivo mútuo - alcançar seus objetivos.
                     </p>
                     <div class="flex">
                         <img src="static/img/capacidade.png" alt="Capacidade">
@@ -106,6 +149,7 @@
         </div>
     </section>
 
+    
     <section class="quebra-contato">
         <h1 class="titulo-branco-centralizado">Entre em contato conosco e nos deixe ajuda-lo</h1>
 
@@ -143,6 +187,7 @@
             </li>
         </ul>
     </section>
+
 
     <footer class="footer">
         <div class="container">

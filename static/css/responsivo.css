@@ -167,6 +167,14 @@
   .quebra-cliente h3 {
     font-size: calc(3.39286vw + 11.14286px);
   }
+
+  .quebra-contato {
+    padding: 40px 0px;
+  }
+
+  .beneficios .lista-beneficios::after {
+    content: none;
+  }
 }
 
 /*# sourceMappingURL=responsivo.css.map */

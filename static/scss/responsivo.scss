@@ -199,5 +199,13 @@
         }
     }
 
+    .quebra-contato {
+        padding: 40px 0px;
+    }
+
+    .beneficios .lista-beneficios::after {
+        content: none;
+    }
+
 
 }
