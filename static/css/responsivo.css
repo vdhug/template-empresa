@@ -4,6 +4,10 @@
   }
 }
 @media only screen and (max-width: 767px) {
+  * {
+    overflow: hidden;
+  }
+
   .header {
     position: relative;
   }
@@ -98,6 +102,10 @@
   }
   .beneficios .beneficio:nth-child(odd) div {
     margin-left: 0;
+  }
+
+  .contato {
+    margin: 0;
   }
 
   .contato .contato-form .input {
