@@ -1,11 +1,100 @@
-@media only screen and (min-width: 960px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  body {
+    background: blue;
+  }
+}
+@media only screen and (max-width: 767px) {
   .container {
-    max-width: 960px;
+    max-width: 400px;
   }
 
-  .beneficios .lista-beneficios::after {
-    height: 1270px;
-    left: 475px;
+  .estudo-item {
+    margin-bottom: 40px;
+  }
+  .estudo-item span,
+.estudo-item p {
+    margin-bottom: 0;
+  }
+
+  .card-servico {
+    margin-bottom: 40px;
+  }
+
+  .card-tecnologia {
+    margin-bottom: 40px;
+    border: none;
+  }
+  .card-tecnologia ul {
+    width: 100%;
+    margin-left: 25px;
+  }
+  .card-tecnologia .card-chamada-servico {
+    width: 100%;
+  }
+  .card-tecnologia .card-chamada-servico h3 {
+    margin-top: 15px;
+    margin-bottom: 45px;
+  }
+
+  .card-contato p {
+    margin-bottom: 40px;
+  }
+
+  .opiniao cite {
+    width: 100%;
+    font-size: 1.563rem;
+  }
+
+  .chamada {
+    padding: 30px 20px;
+  }
+
+  .contato .contato-form .area {
+    height: 150px;
+  }
+
+  .footer div {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .footer nav {
+    padding-bottom: 30px;
+  }
+  .footer p {
+    margin-bottom: 20px;
+  }
+  .footer .footer-titulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .sobre-interna {
+    grid-template-columns: 1fr;
+  }
+  .sobre-interna img {
+    display: none;
+  }
+  .sobre-interna .sobre-descricao {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .beneficios .beneficio {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .beneficios .beneficio:nth-child(odd) div {
+    margin-left: 0;
+  }
+
+  .contato .contato-form .input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .contato .contato-form .area {
+    margin-top: 0px;
   }
 }
 

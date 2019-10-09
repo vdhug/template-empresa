@@ -25,11 +25,11 @@
 .beneficios .lista-beneficios::after {
   content: "";
   position: absolute;
-  left: 600px;
+  left: 550px;
   display: block;
   width: 2px;
   top: -1px;
-  height: 1090px;
+  height: 1130px;
   background: #5c8ef2;
 }
 .beneficios .beneficio {

@@ -307,6 +307,7 @@ body {
 .menu-superior {
   display: flex;
   padding: 25px 0;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
 }

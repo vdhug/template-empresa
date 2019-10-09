@@ -1,15 +1,125 @@
-@media only screen and (min-width: 960px) and (max-width: 1200px) {
+// Media Query meio
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    body {
+        background: blue;
+    }
+}
+
+
+// Mobile
+@media only screen and (max-width: 767px) {
+
+
     .container {
-        max-width: 960px;
+        max-width: 400px;
+    }
+
+    .estudo-item {
+        margin-bottom: 40px;
+
+        span,
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .card-servico {
+        margin-bottom: 40px;
+    }
+
+    .card-tecnologia {
+        margin-bottom: 40px;
+        border: none;
+
+        ul {
+            width: 100%;
+            margin-left: 25px;
+        }
+
+        .card-chamada-servico {
+            width: 100%;
+
+            h3 {
+                margin-top: 15px;
+                margin-bottom: 45px;
+            }
+        }
+    }
+
+    .card-contato {
+        p {
+            margin-bottom: 40px;
+        }
+    }
+
+    .opiniao {
+        cite {
+            width: 100%;
+            font-size: 1.563rem;
+        }
+    }
+
+    .chamada {
+        padding: 30px 20px;
+    }
+
+    .contato .contato-form .area {
+        height: 150px;
+    }
+
+    .footer {
+        div {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+
+        nav {
+            padding-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .footer-titulo {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .sobre-interna {
+        grid-template-columns: 1fr;
+
+        img {
+            display: none;
+        }
+
+        .sobre-descricao {
+            max-width: 400px;
+            margin: 0 auto;
+        }
     }
 
     .beneficios {
+        .beneficio {
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+        }
 
-        .lista-beneficios::after {
-
-            height: 1270px;
-            left: 475px;
-
+        .beneficio:nth-child(odd) div {
+            margin-left: 0;
         }
     }
+
+    .contato .contato-form .input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .contato .contato-form .area {
+        margin-top: 0px;
+    }
+
+
 }

@@ -12,6 +12,7 @@
     flex-wrap: wrap;
 
     .servico {
+        min-width: 280px;
         background: $azulEscuro;
         flex-direction: column;
         padding: 25px;
