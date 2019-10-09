@@ -368,6 +368,7 @@ body {
   margin-left: 15px;
   margin-bottom: 30px;
   height: 60px;
+  overflow: hidden;
 }
 .estudo-info a {
   margin-left: 5px;

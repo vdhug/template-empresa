@@ -5,15 +5,17 @@
 }
 @media only screen and (max-width: 767px) {
   .container {
-    max-width: 400px;
+    max-width: 300px;
   }
 
   .estudo-item {
     margin-bottom: 40px;
   }
-  .estudo-item span,
-.estudo-item p {
+  .estudo-item span {
     margin-bottom: 0;
+  }
+  .estudo-item p {
+    margin-bottom: 10px;
   }
 
   .card-servico {
@@ -42,10 +44,12 @@
 
   .opiniao cite {
     width: 100%;
-    font-size: 1.563rem;
+    font-size: calc(2.69286vw + 11.14286px);
   }
 
   .chamada {
+    font-size: calc(2.69286vw + 11.14286px);
+    line-height: 1.4em;
     padding: 30px 20px;
   }
 
@@ -75,7 +79,7 @@
     display: none;
   }
   .sobre-interna .sobre-descricao {
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
   }
 
@@ -95,6 +99,24 @@
 
   .contato .contato-form .area {
     margin-top: 0px;
+  }
+
+  .titulo-preto,
+.titulo-branco,
+.titulo-branco-centralizado {
+    font-size: calc(3.39286vw + 11.14286px);
+  }
+
+  .subtitulo-interna {
+    font-size: calc(.68182vw + 13.81818px) !important;
+    line-height: 1.4em;
+  }
+
+  .quebra-cliente {
+    padding: 40px 20px;
+  }
+  .quebra-cliente h3 {
+    font-size: calc(3.39286vw + 11.14286px);
   }
 }
 
