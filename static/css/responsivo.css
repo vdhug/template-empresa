@@ -175,6 +175,10 @@
   .beneficios .lista-beneficios::after {
     content: none;
   }
+
+  .contato .contato-form input[type=text] {
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=responsivo.css.map */
