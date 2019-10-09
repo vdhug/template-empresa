@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="static/css/layout.css">
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/blog.css">
+    <link rel="stylesheet" href="static/css/menu.css">
     <link rel="stylesheet" href="static/css/responsivo.css">
 
     <script src="static/js/main.js"></script>
@@ -16,20 +17,37 @@
 </head>
 
 <body>
+
     <header class="header">
-        <div class="container menu-superior grid-12">
+        <div class="menu-superior grid-12">
+            <div class="menu-wrapper">
+                <div class="hamburger-menu"></div>
+            </div>
             <a href="/index.html"><img src="static/img/Potious.png" alt="Logotipo da Potious"></a>
+
             <nav class="header-menu">
-                <ul>
-                    <li><a class="link-menu" href="#">sobre</a></li>
-                    <li><a class="link-menu" href="#">serviços</a></li>
-                    <li><a class="link-menu" href="#">clientes</a></li>
-                    <li><a class="link-menu" href="#">blog</a></li>
-                    <li><a class="link-menu" href="#">contato</a></li>
+                <ul class="">
+                    <li><a class="link-menu" href="sobre.html">sobre</a></li>
+                    <li><a class="link-menu" href="servicos.html">serviços</a></li>
+                    <li><a class="link-menu" href="clientes.html">clientes</a></li>
+                    <li><a class="link-menu" href="blog.html">blog</a></li>
+                    <li><a class="link-menu" href="contato.html">contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <nav class="menu-mobile">
+        <ul class="">
+            <li><a class="link-menu" href="sobre.html">sobre</a></li>
+            <li><a class="link-menu" href="servicos.html">serviços</a></li>
+            <li><a class="link-menu" href="clientes.html">clientes</a></li>
+            <li><a class="link-menu" href="blog.html">blog</a></li>
+            <li><a class="link-menu" href="contato.html">contato</a></li>
+        </ul>
+    </nav>
+
+
 
     <section class="container blog">
         <h1 class="titulo-preto grid-8">Blog</h1>
@@ -39,7 +57,7 @@
                 <img src="static/img/thais.png" alt="Thais">
                 <div class="flex estudo-info">
                     <span class="label">Desenvolvimento Web</span>
-                    <p>Website  de portfólio da artista de maquiagem Thaís Karolyne.</p>
+                    <p>Website de portfólio da artista de maquiagem Thaís Karolyne.</p>
                     <a class="card-call" href="#">Saiba mais</a>
                 </div>
             </li>
@@ -55,7 +73,8 @@
                 <img src="static/img/integrait.png" alt="IntegraIT">
                 <div class="flex estudo-info">
                     <span class="label">Implantação instancia OpenEDX AWS.</span>
-                    <p>Implantação de uma instancia OpenEDX para oferta de cursos internos de capacitação de profissionais.</p>
+                    <p>Implantação de uma instancia OpenEDX para oferta de cursos internos de capacitação de
+                        profissionais.</p>
                     <a class="card-call" href="#">Saiba mais</a>
                 </div>
             </li>
@@ -66,7 +85,7 @@
         <div class="container">
 
             <p class="grid-4">© Potious - Todos os direitos reservados</p>
-            <nav class="contato-footer grid-4">
+            <nav class="contato-footer grid-5">
                 <h2 class="footer-titulo">Contato</h2>
                 <ul>
                     <li><a class="link-menu" href="mailto:contato@potious.com">contato@potious.com</a></li>
@@ -75,7 +94,7 @@
                 </ul>
             </nav>
 
-            <nav class="redes grid-4">
+            <nav class="redes grid-3">
                 <h2 class="footer-titulo">Redes sociais</h2>
                 <ul>
                     <li><a class="link-menu" href="facebook.com">facebook</a></li>
