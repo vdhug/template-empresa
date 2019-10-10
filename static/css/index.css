@@ -136,6 +136,10 @@
   font-weight: bold;
   text-decoration: underline;
 }
+.chamada a:hover {
+  color: #e3e3e3;
+  text-decoration: none;
+}
 
 .metodologia {
   background: #262626;

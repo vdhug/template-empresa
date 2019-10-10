@@ -3,6 +3,10 @@ $bar-height: 5px;
 $bar-spacing: 20px;
 
 
+.menu-mobile {
+    display: none;
+}
+
 .menu-wrapper {
     position: absolute;
     top: 20px;

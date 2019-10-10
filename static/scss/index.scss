@@ -123,6 +123,11 @@
         font-weight: bold;
         text-decoration: underline;
     }
+
+    a:hover {
+        color: $bg;
+        text-decoration: none;
+    }
 }
 
 .metodologia {

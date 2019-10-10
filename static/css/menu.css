@@ -1,3 +1,7 @@
+.menu-mobile {
+  display: none;
+}
+
 .menu-wrapper {
   position: absolute;
   top: 20px;

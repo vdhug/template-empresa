@@ -17,15 +17,15 @@
     .cliente {
         width: calc(33.33% - 20px);
     }
-
-    .menu-mobile {
-        display: none;
-    }
 }
 
 
 // Mobile
 @media only screen and (max-width: 767px) {
+    .menu-mobile {
+        display: block;
+    }
+
     .menu-wrapper {
         display: block;
     }
