@@ -5,6 +5,22 @@
     body {
         background: blue;
     }
+
+    .beneficios .lista-beneficios::after {
+        content: none;
+    }
+
+    .servico {
+        width: calc(50% - 20px);
+    }
+
+    .cliente {
+        width: calc(33.33% - 20px);
+    }
+
+    .menu-mobile {
+        display: none;
+    }
 }
 
 
