@@ -1,0 +1,118 @@
+@import "colors";
+@import "tipografias";
+
+.item-servico {
+    margin-top: 200px;
+    margin-right: 300px;
+
+    background: $azulEscuro;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: -180px;
+        right: -280px;
+        overflow: hidden;
+    }
+
+    div {
+        padding: 200px 0 60px 0px;
+    }
+
+}
+
+.questao-titulo {
+    @extend %bold31;
+    color: $preto;
+}
+
+.questao-resposta {
+    @extend %regular18;
+    color: $preto;
+    margin-top: 40px;
+}
+
+.item-problema {
+    padding: 60px 0;
+    display: flex;
+}
+
+
+.item-solucao {
+    padding: 60px 0;
+    background: $preto;
+
+    .questao-resposta,
+    .questao-titulo {
+        color: $branco;
+    }
+}
+
+.item-processo {
+    padding: 60px 0;
+
+    .lista-processos {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .processo {
+            display: flex;
+            flex-direction: column;
+            min-width: 280px;
+            padding: 25px;
+            margin-bottom: 20px;
+            background: $bg;
+
+            span {
+                @extend %bold39;
+                display: block;
+                margin-bottom: 10px;
+
+            }
+
+            h3 {
+                @extend %bold31;
+            }
+
+            p {
+                @extend %light18;
+                flex-grow: 1;
+                margin: 30px 0;
+            }
+
+            span,
+            h3,
+            p {
+                color: $preto;
+            }
+        }
+    }
+}
+
+.item-chamada {
+    display: flex;
+    flex-direction: column;
+
+    .chamada {
+        margin-top: 0;
+        align-self: flex-end;
+    }
+}
+
+.item-tecnologias {
+    background: $preto;
+    padding: 60px 0;
+
+    .subtitulo-interna {
+        color: $branco;
+    }
+
+    ul {
+        margin-top: 40px;
+
+        li {
+            margin-bottom: 20px;
+        }
+    }
+}

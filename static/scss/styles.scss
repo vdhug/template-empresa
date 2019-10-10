@@ -463,3 +463,23 @@ body {
         }
     }
 }
+
+.chamada {
+    margin-top: 60px;
+    background: $azulEscuro;
+    @extend %regular31;
+    padding: 60px 60px 60px 100px;
+    align-self: flex-end;
+    max-width: 925px;
+
+    a {
+        color: $branco;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: $bg;
+        text-decoration: none;
+    }
+}

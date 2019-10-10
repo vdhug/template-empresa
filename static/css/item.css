@@ -1,0 +1,113 @@
+.item-processo .lista-processos .processo p {
+  font-size: 1.125rem;
+  font-weight: lighter;
+}
+
+.questao-resposta {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
+.item-processo .lista-processos .processo span {
+  font-size: 2.441rem;
+  font-weight: bold;
+}
+
+.item-processo .lista-processos .processo h3, .questao-titulo {
+  font-size: 1.953rem;
+  font-weight: bold;
+}
+
+.item-servico {
+  margin-top: 200px;
+  margin-right: 300px;
+  background: #2f4073;
+  position: relative;
+}
+.item-servico img {
+  position: absolute;
+  top: -180px;
+  right: -280px;
+  overflow: hidden;
+}
+.item-servico div {
+  padding: 200px 0 60px 0px;
+}
+
+.questao-titulo {
+  color: #262626;
+}
+
+.questao-resposta {
+  color: #262626;
+  margin-top: 40px;
+}
+
+.item-problema {
+  padding: 60px 0;
+  display: flex;
+}
+
+.item-solucao {
+  padding: 60px 0;
+  background: #262626;
+}
+.item-solucao .questao-resposta,
+.item-solucao .questao-titulo {
+  color: #f2f2f2;
+}
+
+.item-processo {
+  padding: 60px 0;
+}
+.item-processo .lista-processos {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-processo .lista-processos .processo {
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  padding: 25px;
+  margin-bottom: 20px;
+  background: #e3e3e3;
+}
+.item-processo .lista-processos .processo span {
+  display: block;
+  margin-bottom: 10px;
+}
+.item-processo .lista-processos .processo p {
+  flex-grow: 1;
+  margin: 30px 0;
+}
+.item-processo .lista-processos .processo span,
+.item-processo .lista-processos .processo h3,
+.item-processo .lista-processos .processo p {
+  color: #262626;
+}
+
+.item-chamada {
+  display: flex;
+  flex-direction: column;
+}
+.item-chamada .chamada {
+  margin-top: 0;
+  align-self: flex-end;
+}
+
+.item-tecnologias {
+  background: #262626;
+  padding: 60px 0;
+}
+.item-tecnologias .subtitulo-interna {
+  color: #f2f2f2;
+}
+.item-tecnologias ul {
+  margin-top: 40px;
+}
+.item-tecnologias ul li {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=item.css.map */

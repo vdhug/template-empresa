@@ -10,6 +10,11 @@
   font-weight: lighter;
 }
 
+.chamada {
+  font-size: 1.953rem;
+  font-weight: normal;
+}
+
 .contato .info p {
   font-size: 1.563rem;
   font-weight: normal;
@@ -424,6 +429,23 @@ body {
 .contato .contato-form .btn-branco {
   margin-top: 20px;
   float: right;
+}
+
+.chamada {
+  margin-top: 60px;
+  background: #2f4073;
+  padding: 60px 60px 60px 100px;
+  align-self: flex-end;
+  max-width: 925px;
+}
+.chamada a {
+  color: #f2f2f2;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.chamada a:hover {
+  color: #e3e3e3;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

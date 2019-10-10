@@ -60,8 +60,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .grid-1,
-.grid-2,
+  .grid-2,
 .grid-3,
 .grid-4,
 .grid-5,
@@ -78,6 +77,10 @@
 .grid-16 {
     width: 100%;
     margin: 0;
+  }
+
+  .grid-1 {
+    width: 40%;
   }
 }
 

@@ -3,7 +3,7 @@
   font-weight: lighter;
 }
 
-.chamada, .opiniao cite {
+.opiniao cite {
   font-size: 1.953rem;
   font-weight: normal;
 }
@@ -122,23 +122,6 @@
 .lista-servicos .card-servico .btn-preto {
   margin-top: 10px;
   align-self: flex-start;
-}
-
-.chamada {
-  margin-top: 60px;
-  background: #2f4073;
-  padding: 60px 60px 60px 100px;
-  align-self: flex-end;
-  max-width: 925px;
-}
-.chamada a {
-  color: #f2f2f2;
-  font-weight: bold;
-  text-decoration: underline;
-}
-.chamada a:hover {
-  color: #e3e3e3;
-  text-decoration: none;
 }
 
 .metodologia {

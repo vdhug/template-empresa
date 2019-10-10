@@ -195,6 +195,29 @@
   .contato .contato-form input[type=text] {
     margin-right: 0;
   }
+
+  .item-problema {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .item-servico {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .item-servico div {
+    padding: 30px 0;
+    width: 100%;
+  }
+
+  .questao-titulo,
+.contato-interna h2 {
+    font-size: calc(3.39286vw + 11.14286px);
+  }
 }
 
 /*# sourceMappingURL=responsivo.css.map */
